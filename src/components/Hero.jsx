@@ -73,7 +73,7 @@ export default function Hero() {
             </a>
             <a href={PROFILE.resume}
               className="inline-flex items-center gap-2 px-5 py-3 rounded-xl glass font-semibold hover:-translate-y-0.5 transition-all">
-              <Icon path={icons.download} className="w-4 h-4" /> Résumé
+              <Icon path={icons.download} className="w-4 h-4" /> Resume
             </a>
             <div className="ml-1"><Social /></div>
           </div>
