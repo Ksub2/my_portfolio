@@ -99,8 +99,6 @@ export const icons = {
   sun: <><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4m11.4-11.4 1.4-1.4" /></>,
   moon: <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />,
   arrow: <path d="M5 12h14m-7-7 7 7-7 7" />,
-  arrow: <path d="M5 12h14m-7-7 7 7-7 7" />,
-  arrow: <path d="M5 12h14m-7-7 7 7-7 7" />,
   arrowUp: <path d="M12 19V5m-7 7 7-7 7 7" />,
   download: <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />,
   menu: <path d="M3 12h18M3 6h18M3 18h18" />,
