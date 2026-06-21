@@ -85,4 +85,4 @@ The production build outputs to `dist/`. Deploy it to any static host:
 
 ---
 
-Built with ❤️ using React, Vite & Tailwind CSS.
+Built  using React, Vite & Tailwind CSS.
