@@ -1,15 +1,52 @@
+import { useState } from 'react';
 import { Section } from './Section'
 import { Icon, icons, useCountUp } from './shared'
 import { PROFILE, SERVICES } from '../data/content'
 
 function Stat({ value, suffix, label }) {
   const [val, ref] = useCountUp(value)
+  const [position, setPosition] = useState({ x: 0, y: 0 })
+  const [isHovering, setIsHovering] = useState(false)
+
+  const handleMouseMove = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect()
+    setPosition({
+      x: e.clientX - rect.left,
+      y: e.clientY - rect.top,
+    })
+  }
+
   return (
-    <div ref={ref} className="rounded-2xl glass p-5">
-      <div className="text-3xl md:text-4xl font-extrabold gradient-text tabular-nums">
-        {val}{suffix}
+    <div
+      ref={ref}
+      className="relative rounded-2xl glass p-5 overflow-hidden cursor-pointer transition-all duration-300"
+      style={{
+        border: isHovering ? '1px solid rgba(96, 165, 250, 0.5)' : '1px solid rgba(59, 130, 246, 0.2)',
+        boxShadow: isHovering ? '0 0 30px rgba(100, 150, 255, 0.25)' : 'none',
+        '--mouse-x': isHovering ? `${position.x}px` : '50%',
+        '--mouse-y': isHovering ? `${position.y}px` : '50%',
+      }}
+      onMouseMove={handleMouseMove}
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
+    >
+      {/* Glow effect */}
+      <div
+        className={`absolute inset-0 pointer-events-none transition-opacity duration-200 ${
+          isHovering ? 'opacity-100' : 'opacity-0'
+        }`}
+        style={{
+          background: `radial-gradient(circle 250px at var(--mouse-x) var(--mouse-y), rgba(100, 200, 255, 0.15) 0%, rgba(100, 150, 255, 0.05) 35%, transparent 70%)`,
+        }}
+      />
+
+      {/* Content */}
+      <div className="relative z-10">
+        <div className="text-3xl md:text-4xl font-extrabold gradient-text tabular-nums">
+          {val}{suffix}
+        </div>
+        <div className="mt-1 text-sm text-slate-500 dark:text-slate-400">{label}</div>
       </div>
-      <div className="mt-1 text-sm text-slate-500 dark:text-slate-400">{label}</div>
     </div>
   )
 }
