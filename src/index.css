@@ -84,6 +84,60 @@ body {
 }
 .glow-card:hover::before { opacity: 1; }
 
+.stat {
+  position: relative;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background: rgba(15, 23, 42, 0.4);
+  overflow: hidden;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.stat::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle 250px at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(100, 200, 255, 0.15) 0%,
+    rgba(100, 150, 255, 0.05) 35%,
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.stat:hover::before {
+  opacity: 1;
+}
+
+.stat:hover {
+  border-color: rgba(96, 165, 250, 0.5);
+  box-shadow: 0 0 30px rgba(100, 150, 255, 0.25);
+}
+
+.stat-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #60a5fa;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.stat-label {
+  color: #9ca3af;
+  font-size: 0.875rem;
+}
+
 /* ---- Typing caret ---- */
 .caret {
   display: inline-block;
