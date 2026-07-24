@@ -187,7 +187,7 @@ export const EXPERIENCE = [
   {
     role: 'Flutter Developer',
     company: 'Neutrotex',
-    period: 'Present',
+    period: '2026-Present',
     points: [
       'Building YatraX — an eco-based trails app for exploring Nepal, from UI to integration.',
       'Developing cross-platform features with Flutter for both iOS and Android.',
