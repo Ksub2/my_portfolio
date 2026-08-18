@@ -91,7 +91,7 @@ export const SERVICES = [
 
 export const PROJECTS = [
   {
-    title: 'YatraX',
+    title: 'Nepscape',
     subtitle: 'Eco-based trails app for Nepal',
     desc: 'My current project at Neutrotex — an eco-tourism app that helps travelers discover, navigate, and explore Nepal\'s natural trails with maps, route details, and sustainable-travel insights.',
     tags: ['Flutter', 'Dart', 'Google Maps', 'Firebase'],
