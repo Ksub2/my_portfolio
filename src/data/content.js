@@ -189,7 +189,7 @@ export const EXPERIENCE = [
     company: 'Neutrotex',
     period: '2026-Present',
     points: [
-      'Building YatraX — an eco-based trails app for exploring Nepal, from UI to integration.',
+      'Building Nepscape — an eco-based trails app for exploring Nepal, from UI to integration.',
       'Developing cross-platform features with Flutter for both iOS and Android.',
       'Implementing maps, location services, and clean, scalable app architecture.',
     ],
