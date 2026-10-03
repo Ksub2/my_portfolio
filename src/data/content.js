@@ -191,7 +191,7 @@ export const EXPERIENCE = [
     points: [
       'Building Nepscape — an eco-based trails app for exploring Nepal, from UI to integration.',
       'Developing cross-platform features with Flutter for both iOS and Android.',
-      'Implementing maps, location services, and clean, scalable app architecture.',
+      'Implementing offline-maps, location services, and clean, scalable app architecture.',
     ],
   },
   {
