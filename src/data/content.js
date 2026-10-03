@@ -57,6 +57,10 @@ export const STACK = [
     group: 'Tooling',
     items: ['Git', 'CI/CD', 'Codemagic', 'Figma', 'Postman', 'VS Code', 'Android Studio', 'Xcode'],
   },
+  {
+    group:'Analytics & Monitoring',
+    items:['PostHog','Firebase-Crashlytics'],
+  },
 ]
 
 export const SKILL_STRIP = [
