@@ -1,10 +1,5 @@
-// Edit everything here to personalize your portfolio.
 
-// ── Contact form: paste your Formspree endpoint here ──────────────
-// 1. Go to https://formspree.io and create a free form.
-// 2. Copy the endpoint (looks like https://formspree.io/f/abcdwxyz).
-// 3. Paste it below. Until then the form runs in "demo" mode.
-export const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mjgqbjve' // e.g. 'https://formspree.io/f/xxxxxxx'
+export const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mjgqbjve' 
 
 export const PROFILE = {
   name: 'Keshav Dahal',
@@ -28,7 +23,7 @@ export const PROFILE = {
   twitter: 'https://x.com/Keshab_Dahal2',
   facebook: 'https://www.facebook.com/keshab.yo/',
   instagram: 'https://www.instagram.com/keshab_yo/',
-  resume: '/keshab_resume.pdf', // add your resume to the public folder and update the path
+  resume: '/keshab_resume.pdf', 
   about:
     "I'm a Flutter developer at Neutrotex, where I'm currently building YatraX — an eco-based trails app that helps people discover and explore Nepal's natural routes. I love turning ideas into polished, production-ready apps that ship on iOS and Android from a single codebase. From clean architecture and smooth animations to scalable state management, I care about the details that make apps feel effortless.",
   stats: [
@@ -115,7 +110,7 @@ export const PROJECTS = [
     accent: 'from-indigo-500 to-violet-500',
     icon: '📅',
     cover: '/nea.jpg', 
-    logo: '/nealogo.jpg',  // add your image then uncomment
+    logo: '/nealogo.jpg',  
     repo: 'https://github.com/Ksub2/meeting-Schedule-project',
   },
   {
@@ -126,7 +121,7 @@ export const PROJECTS = [
     accent: 'from-rose-500 to-red-500',
     icon: '🩸',
     cover: '/blood.jpeg',
-    logo: '/bloodlogo.jpeg',  // add your image then uncomment
+    logo: '/bloodlogo.jpeg',  
     repo: 'https://github.com/Ksub2/blood_bank',
   },
   {
@@ -137,7 +132,7 @@ export const PROJECTS = [
     accent: 'from-sky-500 to-cyan-500',
     icon: '🌤️',
    cover: '/weather.jpeg',
-   logo: '/weatherlogo.jpeg',  // add your image then uncomment
+   logo: '/weatherlogo.jpeg',  
     repo: 'https://github.com/Ksub2/weather-app-using-js',
   },
   {
@@ -148,7 +143,7 @@ export const PROJECTS = [
     accent: 'from-emerald-500 to-teal-500',
     icon: '🤖',
     cover: '/chatbot.webp',
-    logo: '/chatbotlogo.webp',  // add your image then uncomment
+    logo: '/chatbotlogo.webp',  
     repo: 'https://github.com/Ksub2/chat_bot',
   },
   {
@@ -159,7 +154,7 @@ export const PROJECTS = [
     accent: 'from-orange-500 to-amber-500',
     icon: '🎙️',
     cover: '/speech.png',
-    logo: '/speechlogo.jpeg',  // add your image then uncomment
+    logo: '/speechlogo.jpeg',  
     repo: 'https://github.com/Ksub2/Speech_to_text',
   },
   {
@@ -170,7 +165,7 @@ export const PROJECTS = [
     accent: 'from-fuchsia-500 to-purple-500',
     icon: '🔍',
     cover: '/sementic.jpg',
-    logo: '/sementiclogo.avif',  // add your image then uncomment
+    logo: '/sementiclogo.avif',  
     repo: 'https://github.com/Ksub2/sementic_search',
   },
   {
