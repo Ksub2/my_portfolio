@@ -92,7 +92,7 @@ export const PROJECTS = [
   {
     title: 'Nepscape',
     subtitle: 'Eco-based trails app for Nepal',
-    desc: 'My current project at Neutrotex — an eco-tourism app that helps travelers discover, navigate, and explore Nepal\'s natural trails with maps, route details, and sustainable-travel insights.',
+    desc: 'My current project at Neutrotex — an eco-tourism app that helps travelers discover, navigate,use offline-maps and explore Nepal\'s natural trails with maps, route details, and sustainable-travel insights.',
     tags: ['Flutter', 'Dart', 'Google Maps', 'Firebase'],
     accent: 'from-teal-600 to-emerald-600',
     icon: '🏔️',
